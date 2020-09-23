@@ -1,0 +1,198 @@
+.main {
+  display: grid;
+  max-width: 845px;
+  max-height: 2000px;
+  color: rgb(47, 21, 107);
+  font-family: "Inconsolata", monospace;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "Slabo 27px", serif;
+  background: rgb(241, 245, 243);
+  border: 2px solid rgb(211, 209, 209);
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1;
+  grid-column: 1;
+  margin-right: 5px;
+  height: 315px;
+  margin-left: 35px;
+  width: 150px;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  letter-spacing: 1;
+  font-size: 85%;
+  grid-row: 1;
+  grid-column: 2;
+  height: 315px;
+}
+
+.contact-info {
+  display: flex;
+  grid-row: 2;
+  grid-column: 1;
+  margin-right: 20px;
+  width: 150px;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(79, 60, 185),
+    rgb(106, 224, 240)
+  );
+
+  width: 215px;
+  height: 825px;
+  font-family: "Inconsolata", monospace;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "Slabo 27px", serif;
+}
+
+.history {
+  grid-row: 2;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  height: 825px;
+}
+
+.main-wrapper {
+  display: flex;
+}
+.headshot {
+  width: 140px;
+  height: 150px;
+  margin-bottom: 10px;
+  margin-top: 35px;
+  box-shadow: -12px 12px 0 -3px rgb(241, 245, 243),
+    -12px 12px 1px 0 rgb(214, 212, 212);
+}
+
+.header-bottomline > span {
+  margin: auto;
+  margin-left: 100px;
+}
+
+.header-line {
+  width: 590px;
+  height: 8px;
+  border-bottom: 2px solid rgb(47, 21, 107);
+  margin-bottom: 25px;
+}
+
+.line {
+  width: 400px;
+  height: 3px;
+  border-bottom: 1px solid rgb(110, 110, 110);
+}
+
+.contact-line {
+  width: 150px;
+  height: 1px;
+  margin-right: 20px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.fas {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.fab {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.far {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.contact-smalltext {
+  font-size: 14px;
+  margin: 2px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+  margin-right: 25px;
+  line-height: 1;
+}
+
+.contact-bottom {
+  margin-top: 15px;
+}
+
+.contact-header {
+  margin-top: 75px;
+  margin-right: 25px;
+  font-size: 105%;
+  letter-spacing: 5;
+  font-weight: 500;
+}
+
+.header-text {
+  font-weight: 600;
+  font-size: larger;
+}
+
+.header-left > h3 {
+  font-weight: 700;
+  font-size: x-large;
+  letter-spacing: 2;
+}
+
+.header-right > h1 {
+  font-weight: 900;
+  font-size: 400%;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+li {
+  color: rgb(110, 110, 110);
+  line-height: 1.4;
+  font-size: 95%;
+}
+
+.history > p {
+  color: rgb(110, 110, 110);
+  margin-top: 10px;
+  font-size: 95%;
+}
+
+.history > h3 {
+  margin-bottom: 12px;
+  letter-spacing: 4;
+}
+
+.history > h4 {
+  color: rgb(110, 110, 110);
+  margin-bottom: 0;
+}
+
+.education {
+  margin-top: 50px;
+}
+
+.header-right > h1 {
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
+.senior {
+  margin-top: 30px;
+}
