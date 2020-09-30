@@ -1,0 +1,147 @@
+* {
+  font-family: "Yeseva One", cursive;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20% auto;
+  width: 50%;
+  height: 75%;
+  margin-bottom: 30%;
+  margin-top: 5%;
+  font-weight: 600;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 15px;
+  border: 0;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+/* container */
+label {
+  display: block;
+  margin-bottom: 4px;
+  position: relative; /* to contain absolute elements */
+  padding-left: 30px; /* free space for custom radio button */
+  cursor: pointer;
+}
+/* hide default radio button  */
+label input[type="radio"] {
+  position: absolute; /* prevent taking any space */
+  /* cross-browser hidingg */
+  opacity: 0;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+/* custom radio button */
+label span {
+  position: absolute;
+  /* position to the free space in <label> */
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: 0.3s background-color; /* slight transition */
+}
+/* the check icon */
+label span:after {
+  content: "";
+  position: absolute;
+  display: none;
+
+  /* middle */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+label:hover span {
+  background-color: #ccc;
+}
+
+/**** Here's the trick ***/
+label input:checked ~ span {
+  background-color: #2eaadc;
+}
+label input:checked ~ span:after {
+  display: block;
+}
+
+select {
+  width: 105%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+select {
+  cursor: pointer;
+}
+
+button {
+  /* remove default behavior */
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 10px;
+
+  /* usual styles */
+  padding: 10px;
+  border: none;
+  background-color: #3f51b5;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 105%;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 1;
+  box-shadow: 0 5px 15px rgba(49, 97, 170, 0.4);
+}
+
+p {
+  margin-left: 20px;
+}
+
+.button {
+  -webkit-appearance: none;
+  margin: 20% auto;
+
+  /* usual styles */
+  padding: 10px;
+  border: none;
+  background-color: #3f51b5;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+input[type="date"]:hover {
+  cursor: pointer;
+}

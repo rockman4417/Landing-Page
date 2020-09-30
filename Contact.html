@@ -5,8 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <a href="index.html" class="has-border solo-button">Home</a>
+    <a href="index.html" class="button">Home</a>
+
+    <div class="main-wrapper">
+      <form action="results.html" method="GET" enctype="multipart/form-data">
+        <div>
+          <label for="name">NAME</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div>
+          <label for="email">EMAIL</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="phone">PHONE</label>
+          <input type="tel" name="phone" id="phone" />
+        </div>
+        <div>
+          <label for="comments">COMMENTS</label>
+          <textarea
+            id="comments"
+            name="comments"
+            minlength="20"
+            maxlength="500"
+          ></textarea>
+        </div>
+
+        <div>
+          <p>DO YOU WISH TO BE CONTACTED BACK?</p>
+
+          <label for="Yes" checked>Yes</label>
+          <input type="radio" name="choice" id="Yes" value="Yes" />
+          <span></span>
+
+          <label for="No">No</label>
+          <input type="radio" name="choice" id="No" value="No" />
+          <span></span>
+        </div>
+        <div>
+          <label for="eyeColor">HOW DID YOU HEAR ABOUT ME?</label>
+          <select name="eyeColor" id="eyeColor" multiple>
+            <option value="Green">CLASSMATE</option>
+            <option label="RESUME SUBMISSION" value="Red">
+              RESUME SUBMISSION
+            </option>
+            <option label="LINKEDIN" value="Red">LINKEDIN</option>
+            <option label="AUSTIN CODING ACADEMY REC" value="Red">
+              AUSTIN CODING ACADEMY REC
+            </option>
+          </select>
+        </div>
+
+        <div>
+          <label for="date">OPTIONAL BIRTHDAY WISH</label>
+          <input type="date" name="date" id="date" min="2019-06-10" />
+        </div>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
