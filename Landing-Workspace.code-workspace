@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "..\\101-AnimatePractice"
+	},
+	{
+		"path": "."
+	},
+	{
+		"path": "..\\FizzBuzz"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Landing-Page"
+  }
+}

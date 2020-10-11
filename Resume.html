@@ -2,24 +2,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./resume-style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=PT+Sans+Narrow&family=Slabo+27px&display=swap" rel="stylesheet">
     
     
+    
     <title>Document</title>
   </head>
-  <body>
+  <body onclick="nameFadeIn()">
 
 <div class="main">
     
     
       <div class="header-left">
-        <img class="headshot" src="./img.jpg"/>
+        <img class="headshot" onclick="picDissappear()" src="./img.jpg"/>
         <h3>SOFTWARE <br>EXPERT</h3>
       </div>
       <div class="header-right">
-        <h1>DARTH <br>VADER</h1>
+        <h1 class="name" style="visibility: hidden;">DARTH <br>VADER</h1>
         <span class="header-line"></span>
         <span class="header-text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit consequatur<br>Placeat
@@ -37,9 +40,9 @@
 
 
       <div class="contact-bottom">
-        <div class="contact-section">
+        <div class="contact-section" onmouseover="phoneAppear()">
           <i class="fas fa-phone-square-alt"></i>
-          <p class="contact-smalltext">322-232-3434</p>
+          <p class="contact-smalltext phone" style="visibility: hidden;">322-232-3434</p>
         </div>
         
         <div class="contact-section">
@@ -128,5 +131,7 @@
     </div>
     
 <div>
+
+  <script src="resume-interactive.js"></script>
   </body>
 </html>
